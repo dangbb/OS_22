@@ -70,7 +70,8 @@ def logToConsole(time_intervals):
 
 
 def FCFS(processes):
-    sorted(processes, key=lambda x: (x["arrival_time"], x["id"]))
+    processes = sorted(processes, key=lambda x: (x["arrival_time"], x["id"]))
+
     time_intervals = []
     start = 0
     timer = 0
@@ -99,7 +100,7 @@ def FCFS(processes):
 
 
 def NonPremSTF(processes):
-    sorted(processes, key=lambda x: (x["arrival_time"], x["id"]))
+    processes = sorted(processes, key=lambda x: (x["arrival_time"], x["id"]))
     time_intervals = []
     start = 0
     timer = 0
@@ -151,7 +152,7 @@ def NonPremSTF(processes):
 
 
 def SRTF(processes):
-    sorted(processes, key=lambda x: (x["arrival_time"], x["id"]))
+    processes = sorted(processes, key=lambda x: (x["arrival_time"], x["id"]))
     time_intervals = []
     start = 0
     timer = 0
@@ -202,7 +203,7 @@ def SRTF(processes):
 
 
 def RR(processes, quantum):
-    sorted(processes, key=lambda x: (x["arrival_time"], x["id"]))
+    processes = sorted(processes, key=lambda x: (x["arrival_time"], x["id"]))
     time_intervals = []
     zero_process = 0
 
